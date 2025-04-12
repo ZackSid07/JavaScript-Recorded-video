@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom selector</title>
+</head>
+<body>
+    <h2>Abdullah Al Galib</h2>
+    <h2>I am a student of BUP</h2>
+    <p id="subTtle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad corporis maxime in, at illo incidunt. Sapiente sed deserunt deleniti soluta?</p>
+
+
+    <script>
+        let mainTitle = document.getElementsByTagName('h2')
+        console.log(mainTitle);
+        // console.log(mainTitle[0].textContent);
+
+        /**
+         * 
+         * if we want all the h2 tags color change to red 
+         * 
+        */
+
+        for(let i = 0 ; i < mainTitle.length ; i++){
+            mainTitle[i].style.color = "tomato";
+        }
+
+        let subTitle = document.getElementById('subTtle')
+        // console.log(subTitle);
+
+        subTitle.style.color= "white"
+        subTitle.style.background = "green" 
+
+        
+        
+
+
+
+        
+        
+        
+    </script>
+    
+</body>
+</html>

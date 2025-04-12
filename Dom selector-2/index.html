@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom selector</title>
+</head>
+<body>
+    <h1>Hello hamza</h1>
+    <!-- <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ut!</p>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ut!</p> -->
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+    </ul>
+
+
+
+
+    <script>
+        // let para = document.getElementsByClassName('para')
+        // para[0].style.color = 'red'
+    //     for(let i = 0 ; i < para.length ; i++)
+    // {
+    //     para[i].style.color = 'red'
+    // }
+    // let para = document.querySelectorAll('.para')
+    // console.log(para);
+    // para.forEach(el => {
+    //     el.style.color = "red"
+
+        
+    // });
+    // let listItem = document.querySelectorAll("li")
+    // listItem.forEach(el =>{
+    //      el.style.backgroundColor = "red";
+    //      el.style.color = "#FFF";
+    //      el.style.marginBottom = "20px"
+    // })
+
+    let itemlist = document.querySelector('li:nth-of-type(4)')
+    itemlist.style.color = "tomato"
+    
+
+
+    </script>
+    
+</body>
+</html>
