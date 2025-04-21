@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style></style>
+</head>
+<body>
+    <!-- <h1>Hello world</h1>
+    <button>click me</button> -->
+    <form action="">
+        <label for="name">Name</label>
+        <input type="text" name="" id="name"><br>
+
+        <label for="email">Email</label>
+        <input type="text" id="email"><br>
+
+        <input type="color" name="" id=""><br>
+
+        <input type="range"><br>
+
+        <label for="cricket">Cricket</label>
+        <input type="checkbox" id="cricket"><br>
+
+        <input type="submit">
+    </form>
+
+
+    <script>
+        // let body = document.querySelector("body")
+        // let title = document.querySelector("h1")
+        
+        // let btn = document.querySelector("button")
+        // btn.addEventListener('click' ,function(){
+        //     title.style.color = '#fff';
+        // title.style.background = "orange"   
+        // title.style.padding = '40px'
+        // body.style.background = "#16152F";
+        // })
+
+        let inputs= document.querySelectorAll('input')
+        // console.log(inputs[0].value);
+        let form = document.querySelector('form')
+
+
+        form.addEventListener('submit' , function(e){
+            e.preventDefault();
+            // console.log("hello world");
+            let name = inputs[0].name
+            console.log(name);
+        })
+        
+
+    </script>
+    
+</body>
+</html>
